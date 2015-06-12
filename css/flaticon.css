@@ -1,0 +1,679 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../font/mini-icon/flaticon.eot");
+  src: url("../font/mini-icon/flaticon.eot#iefix") format("embedded-opentype"), url("../font/mini-icon/flaticon.woff") format("woff"), url("../font/mini-icon/flaticon.ttf") format("truetype"), url("../font/mini-icon/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 11, ../sass/_mini-icon.scss */
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: inherit;
+  font-style: normal;
+}
+
+/* line 16, ../sass/_mini-icon.scss */
+.flaticon-achievement:before {
+  content: "\e000";
+}
+
+/* line 19, ../sass/_mini-icon.scss */
+.flaticon-add-circle:before {
+  content: "\e001";
+}
+
+/* line 22, ../sass/_mini-icon.scss */
+.flaticon-add-circle1:before {
+  content: "\e002";
+}
+
+/* line 25, ../sass/_mini-icon.scss */
+.flaticon-add-folder:before {
+  content: "\e003";
+}
+
+/* line 28, ../sass/_mini-icon.scss */
+.flaticon-airplane:before {
+  content: "\e004";
+}
+
+/* line 31, ../sass/_mini-icon.scss */
+.flaticon-angle-down:before {
+  content: "\e005";
+}
+
+/* line 34, ../sass/_mini-icon.scss */
+.flaticon-angle-left:before {
+  content: "\e006";
+}
+
+/* line 37, ../sass/_mini-icon.scss */
+.flaticon-angle-right:before {
+  content: "\e007";
+}
+
+/* line 40, ../sass/_mini-icon.scss */
+.flaticon-angle-up:before {
+  content: "\e008";
+}
+
+/* line 43, ../sass/_mini-icon.scss */
+.flaticon-armchair:before {
+  content: "\e009";
+}
+
+/* line 46, ../sass/_mini-icon.scss */
+.flaticon-arrow-down-long:before {
+  content: "\e00a";
+}
+
+/* line 49, ../sass/_mini-icon.scss */
+.flaticon-arrow-right-long:before {
+  content: "\e00b";
+}
+
+/* line 52, ../sass/_mini-icon.scss */
+.flaticon-arrow-up-long:before {
+  content: "\e00c";
+}
+
+/* line 55, ../sass/_mini-icon.scss */
+.flaticon-arrrow-left-long:before {
+  content: "\e00d";
+}
+
+/* line 58, ../sass/_mini-icon.scss */
+.flaticon-badge:before {
+  content: "\e00e";
+}
+
+/* line 61, ../sass/_mini-icon.scss */
+.flaticon-bag:before {
+  content: "\e00f";
+}
+
+/* line 64, ../sass/_mini-icon.scss */
+.flaticon-bag1:before {
+  content: "\e010";
+}
+
+/* line 67, ../sass/_mini-icon.scss */
+.flaticon-bag2:before {
+  content: "\e011";
+}
+
+/* line 70, ../sass/_mini-icon.scss */
+.flaticon-baked:before {
+  content: "\e012";
+}
+
+/* line 73, ../sass/_mini-icon.scss */
+.flaticon-bed:before {
+  content: "\e013";
+}
+
+/* line 76, ../sass/_mini-icon.scss */
+.flaticon-bedlamp:before {
+  content: "\e014";
+}
+
+/* line 79, ../sass/_mini-icon.scss */
+.flaticon-bike:before {
+  content: "\e015";
+}
+
+/* line 82, ../sass/_mini-icon.scss */
+.flaticon-books:before {
+  content: "\e016";
+}
+
+/* line 85, ../sass/_mini-icon.scss */
+.flaticon-books1:before {
+  content: "\e017";
+}
+
+/* line 88, ../sass/_mini-icon.scss */
+.flaticon-briefcase:before {
+  content: "\e018";
+}
+
+/* line 91, ../sass/_mini-icon.scss */
+.flaticon-building:before {
+  content: "\e019";
+}
+
+/* line 94, ../sass/_mini-icon.scss */
+.flaticon-calculator:before {
+  content: "\e01a";
+}
+
+/* line 97, ../sass/_mini-icon.scss */
+.flaticon-calendar2:before {
+  content: "\e01b";
+}
+
+/* line 100, ../sass/_mini-icon.scss */
+.flaticon-calendar:before {
+  content: "\e01c";
+}
+
+/* line 103, ../sass/_mini-icon.scss */
+.flaticon-camera:before {
+  content: "\e01d";
+}
+
+/* line 106, ../sass/_mini-icon.scss */
+.flaticon-car:before {
+  content: "\e01e";
+}
+
+/* line 109, ../sass/_mini-icon.scss */
+.flaticon-cellphone:before {
+  content: "\e01f";
+}
+
+/* line 112, ../sass/_mini-icon.scss */
+.flaticon-chart:before {
+  content: "\e020";
+}
+
+/* line 115, ../sass/_mini-icon.scss */
+.flaticon-clock-sand:before {
+  content: "\e021";
+}
+
+/* line 118, ../sass/_mini-icon.scss */
+.flaticon-clock:before {
+  content: "\e022";
+}
+
+/* line 121, ../sass/_mini-icon.scss */
+.flaticon-clock3:before {
+  content: "\e023";
+}
+
+/* line 124, ../sass/_mini-icon.scss */
+.flaticon-close:before {
+  content: "\e024";
+}
+
+/* line 127, ../sass/_mini-icon.scss */
+.flaticon-coffee:before {
+  content: "\e025";
+}
+
+/* line 130, ../sass/_mini-icon.scss */
+.flaticon-coin:before {
+  content: "\e026";
+}
+
+/* line 133, ../sass/_mini-icon.scss */
+.flaticon-compute:before {
+  content: "\e027";
+}
+
+/* line 136, ../sass/_mini-icon.scss */
+.flaticon-credit1:before {
+  content: "\e028";
+}
+
+/* line 139, ../sass/_mini-icon.scss */
+.flaticon-crown:before {
+  content: "\e029";
+}
+
+/* line 142, ../sass/_mini-icon.scss */
+.flaticon-cutlery:before {
+  content: "\e02a";
+}
+
+/* line 145, ../sass/_mini-icon.scss */
+.flaticon-delete:before {
+  content: "\e02b";
+}
+
+/* line 148, ../sass/_mini-icon.scss */
+.flaticon-direction:before {
+  content: "\e02c";
+}
+
+/* line 151, ../sass/_mini-icon.scss */
+.flaticon-discount:before {
+  content: "\e02d";
+}
+
+/* line 154, ../sass/_mini-icon.scss */
+.flaticon-done:before {
+  content: "\e02e";
+}
+
+/* line 157, ../sass/_mini-icon.scss */
+.flaticon-dot:before {
+  content: "\e02f";
+}
+
+/* line 160, ../sass/_mini-icon.scss */
+.flaticon-drink:before {
+  content: "\e030";
+}
+
+/* line 163, ../sass/_mini-icon.scss */
+.flaticon-drink1:before {
+  content: "\e031";
+}
+
+/* line 166, ../sass/_mini-icon.scss */
+.flaticon-earth:before {
+  content: "\e032";
+}
+
+/* line 169, ../sass/_mini-icon.scss */
+.flaticon-edit:before {
+  content: "\e033";
+}
+
+/* line 172, ../sass/_mini-icon.scss */
+.flaticon-email:before {
+  content: "\e034";
+}
+
+/* line 175, ../sass/_mini-icon.scss */
+.flaticon-email1:before {
+  content: "\e035";
+}
+
+/* line 178, ../sass/_mini-icon.scss */
+.flaticon-eye:before {
+  content: "\e036";
+}
+
+/* line 181, ../sass/_mini-icon.scss */
+.flaticon-factory:before {
+  content: "\e037";
+}
+
+/* line 184, ../sass/_mini-icon.scss */
+.flaticon-fast-food:before {
+  content: "\e038";
+}
+
+/* line 187, ../sass/_mini-icon.scss */
+.flaticon-file:before {
+  content: "\e039";
+}
+
+/* line 190, ../sass/_mini-icon.scss */
+.flaticon-file1:before {
+  content: "\e03a";
+}
+
+/* line 193, ../sass/_mini-icon.scss */
+.flaticon-folder1:before {
+  content: "\e03b";
+}
+
+/* line 196, ../sass/_mini-icon.scss */
+.flaticon-folder:before {
+  content: "\e03c";
+}
+
+/* line 199, ../sass/_mini-icon.scss */
+.flaticon-fruit:before {
+  content: "\e03d";
+}
+
+/* line 202, ../sass/_mini-icon.scss */
+.flaticon-game:before {
+  content: "\e03e";
+}
+
+/* line 205, ../sass/_mini-icon.scss */
+.flaticon-gas-station:before {
+  content: "\e03f";
+}
+
+/* line 208, ../sass/_mini-icon.scss */
+.flaticon-gear:before {
+  content: "\e040";
+}
+
+/* line 211, ../sass/_mini-icon.scss */
+.flaticon-gift:before {
+  content: "\e041";
+}
+
+/* line 214, ../sass/_mini-icon.scss */
+.flaticon-graphic1:before {
+  content: "\e042";
+}
+
+/* line 217, ../sass/_mini-icon.scss */
+.flaticon-graphic2:before {
+  content: "\e043";
+}
+
+/* line 220, ../sass/_mini-icon.scss */
+.flaticon-graphics:before {
+  content: "\e044";
+}
+
+/* line 223, ../sass/_mini-icon.scss */
+.flaticon-heart:before {
+  content: "\e045";
+}
+
+/* line 226, ../sass/_mini-icon.scss */
+.flaticon-history:before {
+  content: "\e046";
+}
+
+/* line 229, ../sass/_mini-icon.scss */
+.flaticon-home:before {
+  content: "\e047";
+}
+
+/* line 232, ../sass/_mini-icon.scss */
+.flaticon-hospital:before {
+  content: "\e048";
+}
+
+/* line 235, ../sass/_mini-icon.scss */
+.flaticon-hotel:before {
+  content: "\e049";
+}
+
+/* line 238, ../sass/_mini-icon.scss */
+.flaticon-hotel1:before {
+  content: "\e04a";
+}
+
+/* line 241, ../sass/_mini-icon.scss */
+.flaticon-image:before {
+  content: "\e04b";
+}
+
+/* line 244, ../sass/_mini-icon.scss */
+.flaticon-image1:before {
+  content: "\e04c";
+}
+
+/* line 247, ../sass/_mini-icon.scss */
+.flaticon-info:before {
+  content: "\e04d";
+}
+
+/* line 250, ../sass/_mini-icon.scss */
+.flaticon-key:before {
+  content: "\e04e";
+}
+
+/* line 253, ../sass/_mini-icon.scss */
+.flaticon-lab:before {
+  content: "\e04f";
+}
+
+/* line 256, ../sass/_mini-icon.scss */
+.flaticon-lab1:before {
+  content: "\e050";
+}
+
+/* line 259, ../sass/_mini-icon.scss */
+.flaticon-lab2:before {
+  content: "\e051";
+}
+
+/* line 262, ../sass/_mini-icon.scss */
+.flaticon-lamp:before {
+  content: "\e052";
+}
+
+/* line 265, ../sass/_mini-icon.scss */
+.flaticon-left-arrow:before {
+  content: "\e053";
+}
+
+/* line 268, ../sass/_mini-icon.scss */
+.flaticon-link:before {
+  content: "\e054";
+}
+
+/* line 271, ../sass/_mini-icon.scss */
+.flaticon-list:before {
+  content: "\e055";
+}
+
+/* line 274, ../sass/_mini-icon.scss */
+.flaticon-location:before {
+  content: "\e056";
+}
+
+/* line 277, ../sass/_mini-icon.scss */
+.flaticon-location1:before {
+  content: "\e057";
+}
+
+/* line 280, ../sass/_mini-icon.scss */
+.flaticon-luggage:before {
+  content: "\e058";
+}
+
+/* line 283, ../sass/_mini-icon.scss */
+.flaticon-map:before {
+  content: "\e059";
+}
+
+/* line 286, ../sass/_mini-icon.scss */
+.flaticon-map1:before {
+  content: "\e05a";
+}
+
+/* line 289, ../sass/_mini-icon.scss */
+.flaticon-math:before {
+  content: "\e05b";
+}
+
+/* line 292, ../sass/_mini-icon.scss */
+.flaticon-medal:before {
+  content: "\e05c";
+}
+
+/* line 295, ../sass/_mini-icon.scss */
+.flaticon-melody:before {
+  content: "\e05d";
+}
+
+/* line 298, ../sass/_mini-icon.scss */
+.flaticon-menu-mobile:before {
+  content: "\e05e";
+}
+
+/* line 301, ../sass/_mini-icon.scss */
+.flaticon-microscope:before {
+  content: "\e05f";
+}
+
+/* line 304, ../sass/_mini-icon.scss */
+.flaticon-money-bag:before {
+  content: "\e060";
+}
+
+/* line 307, ../sass/_mini-icon.scss */
+.flaticon-credit:before {
+  content: "\e061";
+}
+
+/* line 310, ../sass/_mini-icon.scss */
+.flaticon-monitor:before {
+  content: "\e062";
+}
+
+/* line 313, ../sass/_mini-icon.scss */
+.flaticon-movie:before {
+  content: "\e063";
+}
+
+/* line 316, ../sass/_mini-icon.scss */
+.flaticon-right-arrow:before {
+  content: "\e064";
+}
+
+/* line 319, ../sass/_mini-icon.scss */
+.flaticon-origami:before {
+  content: "\e065";
+}
+
+/* line 322, ../sass/_mini-icon.scss */
+.flaticon-pie:before {
+  content: "\e066";
+}
+
+/* line 325, ../sass/_mini-icon.scss */
+.flaticon-play-button:before {
+  content: "\e067";
+}
+
+/* line 328, ../sass/_mini-icon.scss */
+.flaticon-power:before {
+  content: "\e068";
+}
+
+/* line 331, ../sass/_mini-icon.scss */
+.flaticon-printer:before {
+  content: "\e069";
+}
+
+/* line 334, ../sass/_mini-icon.scss */
+.flaticon-projector:before {
+  content: "\e06a";
+}
+
+/* line 337, ../sass/_mini-icon.scss */
+.flaticon-question:before {
+  content: "\e06b";
+}
+
+/* line 340, ../sass/_mini-icon.scss */
+.flaticon-restaurant:before {
+  content: "\e06c";
+}
+
+/* line 343, ../sass/_mini-icon.scss */
+.flaticon-search:before {
+  content: "\e06d";
+}
+
+/* line 346, ../sass/_mini-icon.scss */
+.flaticon-setting:before {
+  content: "\e06e";
+}
+
+/* line 349, ../sass/_mini-icon.scss */
+.flaticon-shopping-cart:before {
+  content: "\e06f";
+}
+
+/* line 352, ../sass/_mini-icon.scss */
+.flaticon-shower:before {
+  content: "\e070";
+}
+
+/* line 355, ../sass/_mini-icon.scss */
+.flaticon-shower1:before {
+  content: "\e071";
+}
+
+/* line 358, ../sass/_mini-icon.scss */
+.flaticon-bed-single:before {
+  content: "\e072";
+}
+
+/* line 361, ../sass/_mini-icon.scss */
+.flaticon-speech1:before {
+  content: "\e073";
+}
+
+/* line 364, ../sass/_mini-icon.scss */
+.flaticon-chat2:before {
+  content: "\e074";
+}
+
+/* line 367, ../sass/_mini-icon.scss */
+.flaticon-speech:before {
+  content: "\e075";
+}
+
+/* line 370, ../sass/_mini-icon.scss */
+.flaticon-speedometer6:before {
+  content: "\e076";
+}
+
+/* line 373, ../sass/_mini-icon.scss */
+.flaticon-star:before {
+  content: "\e077";
+}
+
+/* line 376, ../sass/_mini-icon.scss */
+.flaticon-stock:before {
+  content: "\e078";
+}
+
+/* line 379, ../sass/_mini-icon.scss */
+.flaticon-store:before {
+  content: "\e079";
+}
+
+/* line 382, ../sass/_mini-icon.scss */
+.flaticon-subway:before {
+  content: "\e07a";
+}
+
+/* line 385, ../sass/_mini-icon.scss */
+.flaticon-tag:before {
+  content: "\e07b";
+}
+
+/* line 388, ../sass/_mini-icon.scss */
+.flaticon-tag1:before {
+  content: "\e07c";
+}
+
+/* line 391, ../sass/_mini-icon.scss */
+.flaticon-targets:before {
+  content: "\e07d";
+}
+
+/* line 394, ../sass/_mini-icon.scss */
+.flaticon-telephone:before {
+  content: "\e07e";
+}
+
+/* line 397, ../sass/_mini-icon.scss */
+.flaticon-up-arrow:before {
+  content: "\e07f";
+}
+
+/* line 400, ../sass/_mini-icon.scss */
+.flaticon-down-arrow:before {
+  content: "\e080";
+}
+
+/* line 403, ../sass/_mini-icon.scss */
+.flaticon-user:before {
+  content: "\e081";
+}
+
+/* line 406, ../sass/_mini-icon.scss */
+.flaticon-video:before {
+  content: "\e082";
+}
+
+/* line 409, ../sass/_mini-icon.scss */
+.flaticon-website:before {
+  content: "\e083";
+}
+
+/* line 412, ../sass/_mini-icon.scss */
+.flaticon-wifi:before {
+  content: "\e084";
+}

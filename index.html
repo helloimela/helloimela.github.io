@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Application Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="wrapper">
+            <header id="header">
+                <div class="container">
+                    <div class="logoplc">
+                        <h5 class="fw-medium"><span class="smaller">REUSABLE</span> <br><span class="fc-primary">SHORTCODES</span></h5>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" name="search" placeholder="Search ...">
+                                <button type="submit" class="icon-btn">
+                                    <span class="flaticon-search"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <nav id="nav">
+                        <div class="menu-mobile"><a href="" class="flaticon-menu-mobile"></a></div>
+                        <ul class="main-nav">
+                            <li class="js-close-menu close-btn"><a href=""><span class="flaticon-close"></span></a></li>
+                            <li><a href="">Home</a></li>
+                            <li class="toggle-menu">
+                                <a href="">Shortcodes <span class="dropdown-arrow sub flaticon-down-arrow"></span></a>
+                                <ul class="sublevel">
+                                    <li><a href="#anchor-dropdown-menu">Dropdown menu</a></li>
+                                    <li><a href="#anchor-mobile-menu">Mobile menu</a></li>
+                                    <li><a href="#anchor-header-fixed">Header fixed on scroll</a></li>
+                                    <li><a href="#anchor-panel-tab">Panel Tab</a></li>
+                                    <li><a href="#anchor-accordion">Accordion</a></li>
+                                    <li><a href="#anchor-slider">Slider</a></li>
+                                    <li><a href="#anchor-slider2">Slider 2</a></li>
+                                    <li><a href="#anchor-modal-box">Modal Box</a></li>
+                                    <li><a href="#anchor-smooth-scroll">Smooth Scrolling</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="anchor-dropdown-menu" class="column full bg-dark first-section">
+                <div class="container ctn-wrapper large">
+                    <h5 class="title fw-medium">Dropdown Menu</h5>
+                    <div class="content">
+                        <p>Example of dropdown menu is like on the header above.</p>
+                        <p id="dropdown-html">This is a pure CSS Dropdown Menu, so you don't need to install jquery plugins. And here is the HTML code: </p>
+                        <pre class="language-markup sm-text">
+<code>
+&lt;nav id="nav">
+    &lt;div class="menu-mobile">&lt;a href="" class="flaticon-menu-mobile">&lt;/a>&lt;/div>
+    &lt;ul class="main-nav">
+        &lt;li class="js-close-menu close-btn">&lt;a href="">&lt;span class="flaticon-close">&lt;/span>&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="">Home&lt;/a>&lt;/li>
+        &lt;li class="toggle-menu">
+            &lt;a href="">Shortcodes &lt;span class="dropdown-arrow sub flaticon-down-arrow">&lt;/span>&lt;/a>
+            &lt;ul class="sublevel">
+                &lt;li>&lt;a href="#anchor-dropdown-menu">Dropdown menu&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#anchor-mobile-menu">Mobile menu&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#anchor-header-fixed">Header fixed on scroll&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#anchor-panel-tab">Panel Tab&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#anchor-accordion">Accordion&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#anchor-slider">Slider&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#anchor-slider2">Slider 2&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#anchor-modal-box">Modal Box&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#anchor-smooth-scroll">Smooth Scrolling&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/li>
+        &lt;li>&lt;a href="">Contact&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/nav>
+</code>  
+                        </pre>
+                        <p class="row">And the SCSS styling is like the following : </p>
+                        <pre class="language-scss sm-text">
+<code>
+#nav{
+    @extend .clearfix;
+    float: right;
+    position: relative;
+    width: 80%;
+    margin-top: 10px;
+    text-align: right;
+    text-transform: uppercase;
+    li{
+        display: inline-block;
+        position: relative;
+        @extend .clearfix;
+        a{
+            display: block;
+            font-weight: 600;
+            font-size: 0.9em;
+            padding: 8px 20px;
+            @include border-radius(3px);
+            &amp;:hover{
+                background: $theme;
+                color: #fff;
+            }
+        }
+    }
+    .sublevel{
+        display: none;
+        position: absolute;
+        background: #fff;
+        text-align: left;
+        @include box-shadow(0 20px 45px rgba(0, 0, 0, 0.08));
+        width: 150%;
+        padding: 0px;
+        top:auto;
+        z-index: 100;
+        left: 0;
+        border-top: 5px solid $theme; 
+        @include border-radius(0 6px 6px 6px);
+        li{
+            width: 100%;
+            min-width: 220px;
+            a{
+                @include border-radius(0px);
+                color: #7676A5;
+                font-weight: 500;
+                padding: 8px 15px 8px 10px;
+                text-transform: capitalize;
+                &amp;:hover{background: lighten($theme, 10%);color: #fff;}
+            }
+        }
+    }
+    .main-nav li:hover{
+        .sublevel{
+            display: block;
+        }
+    }
+
+    .menu-mobile{
+        position: absolute;
+        top:-40px;right:0px;
+        display: none;
+    }
+    .close-btn{
+        display: none;
+    }
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="anchor-mobile-menu" class="column full bg-white">
+                <div class="container ctn-wrapper large">
+                    <h5 class="title fw-medium">Mobile Menu</h5>
+                    <figure>
+                        <img src="img/ss/mobile-menu.png">
+                        <span class="desc">Mobile menu layout preview</span>
+                    </figure>
+                    <p>Resize window &amp; refresh to see mobile menu version. The html code is same with the <a href="#dropdown-html">dropdown menu above</a>. Below is the media query in SCSS code for the mobile layout (put inside #nav):</p>
+                    <pre class="language-scss sm-text">
+<code>
+@include respond-to(handhelds){
+    .menu-mobile{display: block;}
+    .close-btn{
+        display: block;
+        a{
+            &amp;hover{
+                background: none; color: $dark;
+            }
+        }
+    }
+    .main-nav{
+        min-width: 250px;
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        background: #fff;
+        z-index: 200;
+        @include transition(all ease-out 0.4s);
+        @include box-shadow(0 20px 45px rgba(0, 0, 0, 0.08));
+        right: -100%;
+        top: 0;
+        text-align: left;
+        overflow-y: auto;
+        li{
+            display: block;
+            width: 90%;
+            min-width: 0;
+            margin: 0 auto;
+            .sublevel{
+                position: relative;
+                @include box-shadow(none);
+                text-align: left;
+                display: none;
+                width: 100%;
+                border-top:0px solid #FCD4D1;
+                margin-bottom: 20px;
+                li{border-bottom:1px solid #FCD4D1;width: 90%;margin-left: 20px;}
+                li a{
+                    padding-left: 0;
+                    &amp;:hover{background: none; color: $theme;}
+                }
+            }
+        }
+        &amp;.open{right: 0;}
+    }
+
+    .main-nav li:hover{
+        .sublevel{
+            display: none;
+        }
+    }
+}
+                        </code>
+                    </pre>
+
+                    <p>To make it works, add jquery code below :</p>
+                    <pre class="language-javascript sm-text">
+<code>
+$('.menu-mobile a').click(function(e){
+    e.preventDefault();
+    $('.main-nav').addClass('open');
+
+});
+
+$('.js-close-menu a').click(function(e){
+    e.preventDefault();
+    $('.main-nav').removeClass('open');
+});
+
+if($(window).width()&lt;=800){
+    $('body').addClass('mobile-view');
+    $('.toggle-menu a').click(function(e){
+        e.preventDefault();
+        if($(this).parent().find('ul.sublevel').hasClass('open')){
+            $(this).parent().find('ul.sublevel').slideUp('fast').removeClass('open');
+        } else {
+            $(this).parent().find('ul.sublevel').slideDown('fast').addClass('open');
+        }
+    });
+}
+
+                        </code>
+                    </pre>
+                    
+                </div>
+            </section>
+
+            <section id="anchor-header-fixed" class="column full bg-dark">
+                <div class="container ctn-wrapper large">
+                    <h5 class="title fw-medium">Fixed Header on Scroll</h5>
+                    <p>Scroll this page to see the effect working. Here is the html, scss, and jquery code.</p>
+                    <div class="full ctn-wrapper">
+                        <pre class="language-markup sm-text">
+<code>
+&lt;header id="header">
+    &lt;div class="container">
+        &lt;div class="logoplc">
+            &lt;h5 class="fw-medium">&lt;span class="smaller">REUSABLE&lt;/span> &lt;br>&lt;span class="fc-primary">SHORTCODES&lt;/span>&lt;/h5>
+        &lt;/div>
+        &lt;div class="search">
+            &lt;form>
+                &lt;div class="input-group">
+                    &lt;input type="text" name="search" placeholder="Search ...">
+                    &lt;button type="submit" class="icon-btn">
+                        &lt;span class="flaticon-search">&lt;/span>
+                    &lt;/button>
+                &lt;/div>
+            &lt;/form>
+        &lt;/div>
+        &lt;nav id="nav">
+            ....
+        &lt;/nav>
+    &lt;/div>
+&lt;/header>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="column one-2 ctn-wrapper">
+                        <pre class="language-javascript sm-text">
+                            <code>
+
+$(window).scroll(function(){
+    if($('body').scrollTop() >= 50){
+        $('header').addClass('fixed');
+    } else {
+        if($('header').hasClass('fixed')){
+            $('header').removeClass('fixed');
+        }
+    }
+});
+                            </code>
+                        </pre>
+                        <p>We add <code class="sm-text language-javascript">$('body').scrollTop() >= 50</code> to set a distance of 50px to be our marker for when our header will resize and animate.</p>
+                    </div>
+
+                    <div class="column one-2 ctn-wrapper">
+                        <pre class="language-scss sm-text">
+<code>
+#header{
+    @extend .clearfix;
+    width: 100%;
+    z-index: 400;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    @include transition(all 0.3s);
+    padding: 10px 30px;
+    position: fixed;
+    top:0;left: 0;
+    .search{
+        width: 20%;
+        min-width: 200px;
+        float: right;
+        @include transition(all 0.3s);
+        opacity: 1;
+        margin-top: 0;
+        @include respond-to(handhelds){
+            width: 80%;
+            margin-top: 20px;
+            float: left;
+        }
+    }
+}
+
+.logoplc{
+    float: left;
+    @include transition(all 0.3s);
+    @include transform(1);
+    h5{margin-top: 10px;@include transition(all 0.3s);}
+}                                
+
+#header.fixed{
+    padding: 0 30px;
+    position: fixed;
+    .logoplc{@include transform(scale(0.7));h5{margin-top: 0;}}
+    .search{margin-top: -100px;}
+}
+                            </code>
+                        </pre>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="anchor-panel-tab" class="column full bg-white">
+                <div class="container">
+                    <div class="column full ctn-wrapper large">
+                        <h5 class="title fw-medium">Panel Tab</h5>
+
+                        <div class="panelplc">
+                            <ul class="panel-toggle">
+                                <li><a class="active" href="tab1">Harry Potter</a></li>
+                                <li><a href="tab2">Ron Weasley</a></li>
+                                <li><a href="tab3">Hermione Granger</a></li>
+                            </ul>
+                            <ul class="panel-content">
+                                <li id="tab1" class="active">
+                                    <div class="column full ctn-wrapper large bg-primary">
+                                        <h6 class="fc-dark fw-medium">The Hero</h6>
+                                        <p>Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.</p>
+                                    </div>
+                                </li>
+                                <li id="tab2">
+                                    <div class="column full ctn-wrapper large bg-primary">
+                                        <h6 class="fc-dark fw-medium">The Red Best Friend</h6>
+                                        <p>Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.</p>
+                                    </div>
+                                </li>
+                                <li id="tab3">
+                                    <div class="column full ctn-wrapper large bg-primary">
+                                        <h6 class="fc-dark fw-medium">The Genious Geenie</h6>
+                                        <p>Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="column full ctn-wrapper large clearfix">
+                        <p>HTML code for panel tab.</p>
+                        <pre class="language-markup">
+<code>
+&lt;div class="container ctn-wrapper large">
+&lt;h5 class="title fw-medium">Panel Tab&lt;/h5>
+
+&lt;div class="panelplc">
+&lt;ul class="panel-toggle">
+    &lt;li>&lt;a class="active" href="tab1">Harry Potter&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="tab2">Ron Weasley&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="tab3">Hermione Granger&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ul class="panel-content">
+    &lt;li id="tab1" class="active">
+        &lt;div class="column full ctn-wrapper large bg-primary">
+            &lt;h6 class="fc-dark fw-medium">The Hero&lt;/h6>
+            &lt;p>Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.&lt;/p>
+        &lt;/div>
+    &lt;/li>
+    &lt;li id="tab2">
+        &lt;div class="column full ctn-wrapper large bg-primary">
+            &lt;h6 class="fc-dark fw-medium">The Red Best Friend&lt;/h6>
+            &lt;p>Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.&lt;/p>
+        &lt;/div>
+    &lt;/li>
+    &lt;li id="tab3">
+        &lt;div class="column full ctn-wrapper large bg-primary">
+            &lt;h6 class="fc-dark fw-medium">The Genious Geenie&lt;/h6>
+            &lt;p>Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.&lt;/p>
+        &lt;/div>
+    &lt;/li>
+&lt;/ul>
+&lt;/div>
+</code>
+                        </pre>
+                    </div>
+
+                    <div class="column one-2 ctn-wrapper large">
+                        <p>SCSS</p>
+                        <pre class="language-scss">
+<code>
+.panelplc{
+    .panel-toggle{
+        @extend .clearfix;
+        margin-bottom: 2px;
+        li{
+            display: block;
+            float: left;
+            margin-right: 1px;
+            a{
+                display: block;
+                padding: 10px 20px;
+                background: $dark;
+                color: #D8D8D8;
+                @include transition(all 0.3s);
+                @include border-top-radius(5px);
+                &amp;:hover{
+                    background: lighten($dark, 10%);
+                }
+                &amp;.active{
+                    background: lighten($theme, 10%);
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+    .panel-content{
+        li{
+            display: none;
+            position: relative;
+            &amp;.active{display: block;}
+            h6{margin-bottom: 20px;}
+        }
+    }
+}
+</code>
+                        </pre>
+                    </div>
+                    <div class="column one-2 ctn-wrapper large">
+                        <p>Javascript</p>
+                        <pre class="language-javascript">
+<code>
+    var href;
+
+    $('.panel-toggle a').click(function(e){
+        e.preventDefault();
+        href = '#'+$(this).attr('href');
+        $('.panel-content').find('.active').slideUp().removeClass('active');
+        $(href).slideDown().addClass('active');
+        $('.panel-toggle a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+</code>
+                        </pre>
+                    </div>
+                </div>
+
+                
+            </section>
+
+            <section id="anchor-accordion" class="column full bg-white">
+                <div class="container">
+                    <div class="column full ctn-wrapper large">
+                        <h5 class="title fw-medium">Accordion</h5>
+                        <div class="accordion">
+                            <ul class="acc-menu">
+                                <li>
+                                    <a href="" class="acc-toggle"><span class="plus"></span>Accio</a>
+                                    <div class="acc-ctn">
+                                        <p>Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="acc-toggle"><span class="plus"></span>Mobilius</a>
+                                    <div class="acc-ctn">
+                                        <p>Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma and Parvati Sorting Hat Minister of Magic blue turban remember my last.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="acc-toggle"><span class="plus"></span>Xenophily</a>
+                                    <div class="acc-ctn">
+                                        <p>Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Nearly-Headless Nick now string them together, and answer me this, which creature would you be unwilling to kiss? Poltergeist sticking charm, troll umbrella stand flying cars golden locket Lily Potter. Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Stan Shunpike doe patronus, suck his soul Muggle-Born large order of drills the trace. Bred in captivity fell through the veil, quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column one-3 ctn-wrapper">
+                    <p class="row">HTML</p>
+                        <pre class="language-markup">
+<code>
+&lt;div class="accordion">
+    &lt;ul class="acc-menu">
+        &lt;li>
+            &lt;a href="" class="acc-toggle">&lt;span class="plus">&lt;/span>Accio&lt;/a>
+            &lt;div class="acc-ctn">
+                &lt;p>....&lt;/p>
+            &lt;/div>
+        &lt;/li>
+        &lt;li>
+            &lt;a href="" class="acc-toggle">&lt;span class="plus">&lt;/span>Mobilius&lt;/a>
+            &lt;div class="acc-ctn">
+                &lt;p>...&lt;/p>
+            &lt;/div>
+        &lt;/li>
+        &lt;li>
+            &lt;a href="" class="acc-toggle">&lt;span class="plus">&lt;/span>Xenophily&lt;/a>
+            &lt;div class="acc-ctn">
+                &lt;p>...&lt;/p>
+            &lt;/div>
+        &lt;/li>
+    &lt;/ul>
+&lt;/div>
+</code>
+                        </pre>
+                    
+                    </div>
+
+                    <div class="column one-3 ctn-wrapper">
+                        <p class="row">SCSS</p>
+                        <pre class="language-scss">
+<code>
+.accordion{
+    li{
+        margin-bottom: 1px;
+    }
+    .acc-toggle{
+        display: block;
+        width: 100%;
+        position: relative;
+        @include box-sizing(border-box);
+        padding: 20px 20px 20px 80px;
+        background: $dark;
+        color: darken(#fff,10%);
+        .plus, .plus:before{
+            display: block;
+            width: 4px; height: 20px;
+            @include border-radius(2px);
+            background: darken(#fff,10%);
+            position: absolute;
+            @include transform(rotate(0deg));
+            @include transition(all 0.3s);
+        }
+        .plus{
+            top:20px;left: 40px;
+        }
+        .plus:before{
+            content: '';
+            position: absolute;
+            @include transform(rotate(90deg));
+        }
+    }
+    .acc-ctn{
+        @include box-sizing(border-box);
+        width: 100%;
+        padding: 50px;
+        background: lighten($mutedlight,10%);
+        display: none;
+    }
+    li.active{
+        .plus{@include transform(rotate(90deg));}
+        .plus:before{@include transform(rotate(180deg));}
+    }
+}
+</code>
+                        </pre>
+                    </div>
+
+                    <div class="column one-3 ctn-wrapper">
+                        <p class="row">Javascript</p>
+                        <pre class="language-javascript">
+<code>
+$('.acc-toggle').click(function(e){
+    e.preventDefault();
+    if($(this).parent().hasClass('active')){
+        $(this).parent().find('.acc-ctn').slideUp();
+        $(this).parent().removeClass('active');
+    } else {
+
+        // remove this part to keep another accordion menu open on one menu click
+        $('.acc-menu > li').removeClass('active');
+        $('.acc-ctn').each(function(){
+            $(this).slideUp();
+        });
+
+
+        $(this).parent().find('.acc-ctn').slideDown();
+        $(this).parent().addClass('active');
+    }
+    
+});
+</code>
+                        </pre>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="anchor-slider" class="column full bg-dark">
+                <div class="container">
+                    <div class="column full ctn-wrapper large">
+                        <h5 class="title fw-medium">Slider <span class="smaller fw-thin">with <a href="http://flexslider.woothemes.com/" target="_blank">Flexlider 2</a></span></h5>
+                        
+                        <div class="flexslider">
+                          <ul class="slides">
+                            <li>
+                              <img src="img/slides/01.jpg" />
+                            </li>
+                            <li>
+                              <img src="img/slides/02.jpg" />
+                            </li>
+                            <li>
+                              <img src="img/slides/03.jpg" />
+                            </li>
+                            <li>
+                              <img src="img/slides/04.jpg" />
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+
+                    <div class="column full ctn-wrapper large">
+                        <p>Read complete documentation <a href="http://flexslider.woothemes.com/"target="_blank">here</a></p>
+                        <p>HTML</p>
+                        <pre class="language-markup">
+<code>
+&lt;div class="flexslider">
+  &lt;ul class="slides">
+    &lt;li>
+      &lt;img src="img/slides/01.jpg" />
+    &lt;/li>
+    &lt;li>
+      &lt;img src="img/slides/02.jpg" />
+    &lt;/li>
+    &lt;li>
+      &lt;img src="img/slides/03.jpg" />
+    &lt;/li>
+    &lt;li>
+      &lt;img src="img/slides/04.jpg" />
+    &lt;/li>
+  &lt;/ul>
+&lt;/div>
+</code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="anchor-slider2" class="column full bg-white">
+                <div class="container clearfix">
+                    <div class="column full ctn-wrapper clearfix">
+                        <h5 class="title fw-medium">Slider model 2</h5>
+                        
+                        <div class="slider-wrapper ctn-wrapper">
+                            <div class="column two-3">
+                                <div id="slider" data-maxorder="4">
+                                  <ul class="slides">
+                                      <li data-order="1" style="background-image:url(img/slides/01.jpg);">
+                                          <div class="black-grad"></div>
+                                        <div class="slide-title sm-text">
+                                          <h4 class="title fw-medium">A quick brown fox jump over the lazy dog</h4>
+                                          <p class="fw-thin">20 May 2015</p>
+                                        </div>
+                                      </li>
+                                      <li data-order="2" style="background-image:url(img/slides/02.jpg);">
+                                          <div class="black-grad"></div>
+                                        <div class="slide-title sm-text">
+                                          <h4 class="title fw-medium">A little things called love</h4>
+                                          <p class="fw-thin">21 May 2015</p>
+                                        </div>
+                                      </li>
+                                      <li data-order="3" style="background-image:url(img/slides/03.jpg);">
+                                          <div class="black-grad"></div>
+                                        <div class="slide-title sm-text">
+                                          <h4 class="title fw-medium">The resurrection of Miini Mouse</h4>
+                                          <p class="fw-thin">25 May 2015</p>
+                                        </div>
+                                      </li>
+                                      <li data-order="4" style="background-image:url(img/slides/04.jpg);">
+                                          <div class="black-grad"></div>
+                                        <div class="slide-title sm-text">
+                                          <h4 class="title fw-medium">Rogue in a midst of cloud</h4>
+                                          <p class="fw-thin">29 May 2015</p>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="column one-3">
+                                <div id="carousel">
+                                  <ul class="slides">
+                                    <li data-order="1">
+                                      <div class="imgplc">
+                                        <img src="img/slides/01.jpg" />
+                                      </div>
+                                      <p class="sm-text bold">A quick brown fox jump over the lazy dog</p>
+                                    </li>
+                                    <li data-order="2">
+                                      <div class="imgplc">
+                                        <img src="img/slides/02.jpg" />
+                                      </div>
+                                      <p class="sm-text bold">A little things called love</p>
+                                    </li>
+                                    <li data-order="3">
+                                      <div class="imgplc">
+                                        <img src="img/slides/03.jpg" />
+                                      </div>
+                                      <p class="sm-text bold">The resurrection of Mini Mouse</p>
+                                    </li>
+                                    <li data-order="4">
+                                      <div class="imgplc">
+                                        <img src="img/slides/04.jpg" />
+                                      </div>
+                                      <p class="sm-text bold">Rogue in a midst of cloud</p>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="column full clearfix ctn-wrapper">
+                        <pre class="language-markup sm-text">
+<code>
+&lt;div class="slider-wrapper ctn-wrapper">
+    &lt;div class="column two-3">
+        &lt;div id="slider" data-maxorder="4">
+          &lt;ul class="slides">
+              &lt;li data-order="1" style="background-image:url(img/slides/01.jpg);">
+                  &lt;div class="black-grad">&lt;/div>
+                &lt;div class="slide-title sm-text">
+                  &lt;h4 class="title fw-medium">A quick brown fox jump over the lazy dog&lt;/h4>
+                  &lt;p class="fw-thin">20 May 2015&lt;/p>
+                &lt;/div>
+              &lt;/li>
+              &lt;li data-order="2" style="background-image:url(img/slides/02.jpg);">
+                  &lt;div class="black-grad">&lt;/div>
+                &lt;div class="slide-title sm-text">
+                  &lt;h4 class="title fw-medium">A little things called love&lt;/h4>
+                  &lt;p class="fw-thin">21 May 2015&lt;/p>
+                &lt;/div>
+              &lt;/li>
+              &lt;li data-order="3" style="background-image:url(img/slides/03.jpg);">
+                  &lt;div class="black-grad">&lt;/div>
+                &lt;div class="slide-title sm-text">
+                  &lt;h4 class="title fw-medium">The resurrection of Miini Mouse&lt;/h4>
+                  &lt;p class="fw-thin">25 May 2015&lt;/p>
+                &lt;/div>
+              &lt;/li>
+              &lt;li data-order="4" style="background-image:url(img/slides/04.jpg);">
+                  &lt;div class="black-grad">&lt;/div>
+                &lt;div class="slide-title sm-text">
+                  &lt;h4 class="title fw-medium">Rogue in a midst of cloud&lt;/h4>
+                  &lt;p class="fw-thin">29 May 2015&lt;/p>
+                &lt;/div>
+              &lt;/li>
+            &lt;/ul>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="column one-3">
+        &lt;div id="carousel">
+          &lt;ul class="slides">
+            &lt;li data-order="1">
+              &lt;div class="imgplc">
+                &lt;img src="img/slides/01.jpg" />
+              &lt;/div>
+              &lt;p class="sm-text bold">A quick brown fox jump over the lazy dog&lt;/p>
+            &lt;/li>
+            &lt;li data-order="2">
+              &lt;div class="imgplc">
+                &lt;img src="img/slides/02.jpg" />
+              &lt;/div>
+              &lt;p class="sm-text bold">A little things called love&lt;/p>
+            &lt;/li>
+            &lt;li data-order="3">
+              &lt;div class="imgplc">
+                &lt;img src="img/slides/03.jpg" />
+              &lt;/div>
+              &lt;p class="sm-text bold">The resurrection of Mini Mouse&lt;/p>
+            &lt;/li>
+            &lt;li data-order="4">
+              &lt;div class="imgplc">
+                &lt;img src="img/slides/04.jpg" />
+              &lt;/div>
+              &lt;p class="sm-text bold">Rogue in a midst of cloud&lt;/p>
+            &lt;/li>
+          &lt;/ul>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code>
+                        </pre>
+                    </div>
+
+                    <div class="column one-2 ctn-wrapper">
+                        <pre class="language-javascript sm-text">
+<code>
+    var order = 1, maxOrder = $('#slider').data('maxorder');
+    var carouselH = $('#carousel li[data-order='+order+']').outerHeight(true);
+    var lastCar=maxOrder;
+
+    $('#slider li[data-order='+order+']').fadeIn().addClass('active-slide');
+    $('#carousel li[data-order='+order+']').addClass('active-crsl');
+
+    var startInterval;
+    function startSlider(){
+        startInterval = setInterval(function(){
+
+            $('#slider li[data-order='+order+']').fadeOut().removeClass('active-slide');
+
+            $('#carousel li[data-order='+order+']')
+                .animate({'margin-top' : -(carouselH)+'px'}, 100)
+                .clone(true).insertAfter($('#carousel li[data-order='+lastCar+']')).removeClass('active-crsl');
+            lastCar = order;
+
+            order = order==maxOrder ? 1 : order+1 ;
+            $('#slider li[data-order='+order+']').fadeIn().addClass('active-slide');
+            $('#carousel li[data-order='+order+']').addClass('active-crsl');
+
+            setTimeout(function(){
+                $('#carousel li[data-order='+lastCar+'].active-crsl').removeClass('active-crsl').remove();
+            },600);
+
+        }, 5000);
+    }
+
+    startSlider();
+    
+    $('#carousel li').click(function(){
+        $current = $(this);
+        var selectedSlide = $current.data('order');
+        clearInterval(startInterval);
+
+        $('#carousel li').removeClass('active-crsl');
+
+        $current.addClass('active-crsl');
+
+        $current.prevAll().each(function(){
+            $eachPrev = $(this);
+            $eachPrev.clone(true).insertAfter($('#carousel li[data-order='+lastCar+']'));
+            $eachPrev.animate({marginTop : -($(this).outerHeight(true))+'px'},100);
+        });
+
+        lastCar = $current.prev().data('order');
+        order = selectedSlide;
+
+        setTimeout(function(){
+            $current.prevAll().remove();
+        },500);
+
+        $('#slider li.active-slide').fadeOut();
+        $('#slider li[data-order="'+selectedSlide+'"]').fadeIn().addClass('active-slide');
+
+        startSlider();
+
+    });
+</code>
+                        </pre>
+                    </div>
+
+                    <div class="column one-2 ctn-wrapper">
+                        <pre class="language-scss sm-text">
+<code>
+    #slider{
+        height: 369px;
+        ul{
+            @extend .clearfix;
+            li{
+                width: 100%;
+                height: 369px;
+                overflow:hidden;
+                position: absolute;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: none;
+                .slide-title{
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    //background: rgba(#000,0.5);
+                    @include box-sizing(border-box);
+                    padding: 30px;
+                    color: #fff;
+                    p{margin: 0;}
+                }
+            }
+        }
+    }
+
+    #carousel{
+        @include box-sizing(border-box);
+        border-left: 3px solid #fff;
+        height: 369px;
+        overflow: hidden;
+        ul{
+            li{
+                display: block;
+                width: 100%;
+                margin-bottom: 3px;
+                margin-top: 0;
+                cursor: pointer;
+                position: relative;
+                float: left;
+                background: lighten($mutedlight,5%);
+                @extend .clearfix;
+                @include box-sizing(border-box);
+                @include transition(all 0.5s);
+                .imgplc{
+                    width: 80px;float: left;
+                    height: 90px;
+                    overflow: hidden;
+                    margin-right: 20px;
+                    img{height: 100%;}
+                }
+                p{
+                    margin: 25px 20px;
+                }
+                &amp;.active-crsl{background:rgba(#358AD1,1); color:#fff;}
+            }
+        }
+    }
+</code>
+                        </pre>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="anchor-modal-box" class="column full bg-white">
+                <div class="container ctn-wrapper large">
+                    <h5 class="title fw-medium">Modal Box</h5>
+                    <p class="fw-medium">Static Modal Box / Notification</p>
+                    <div class="message warning js-modal">
+                        <p><span class="fw-medium">Warning Message</span>. Squashy armchairs dirt on your nose brass scales crush the Sopophorous bean with flat side of silver dagger.</p>
+                        <span class="icon sm-text"><a href="" class="js-close-modal flaticon-close"></a></span>
+                    </div>
+
+                    <div class="message info js-modal">
+                        <p><span class="fw-medium">Info Message</span>. Squashy armchairs dirt on your nose brass scales crush the Sopophorous bean with flat side of silver dagger.</p>
+                        <span class="icon sm-text"><a href="" class="js-close-modal flaticon-close"></a></span>
+                    </div>
+
+                    <div class="message success js-modal">
+                        <p><span class="fw-medium">Success Message</span>. Squashy armchairs dirt on your nose brass scales crush the Sopophorous bean with flat side of silver dagger.</p>
+                        <span class="icon sm-text"><a href="" class="js-close-modal flaticon-close"></a></span>
+                    </div>
+
+                    <div class="message danger js-modal">
+                        <p><span class="fw-medium">Danger Message</span>. Squashy armchairs dirt on your nose brass scales crush the Sopophorous bean with flat side of silver dagger.</p>
+                        <span class="icon sm-text"><a href="" class="js-close-modal flaticon-close"></a></span>
+                    </div>
+
+                    <div class="message inactive js-modal">
+                        <p><span class="fw-medium">Inactive Message</span>. Squashy armchairs dirt on your nose brass scales crush the Sopophorous bean with flat side of silver dagger.</p>
+                        <span class="icon sm-text"><a href="" class="js-close-modal flaticon-close"></a></span>
+                    </div>
+
+                    <p>Here is the basic structure for notification box.</p>
+                    <pre class="language-markup sm-text">
+<code>
+&lt;div class="message inactive js-modal">
+&lt;!-- class message = for basic layout -->
+&lt;!-- class inactive = message type (warning, info, success, danger, inactive) -->
+&lt;!-- class js-modal = for js interaction -->
+    &lt;p>&lt;span class="fw-medium">Inactive Message&lt;/span>..... .&lt;/p>
+    &lt;span class="icon sm-text">&lt;a href="" class="js-close-modal flaticon-close">&lt;/a>&lt;/span>
+&lt;/div>
+</code>
+                    </pre>
+
+                    <pre class="language-scss sm-text">
+<code>
+// SCSS styling for message / notifications box
+.message{
+    padding: 20px 50px 20px 20px;
+    margin: 20px 0;
+    font-size: 0.9em;
+    @include box-sizing(border-box);
+    position: relative;
+    @include border-radius(5px);
+    p{margin-bottom: 0;}
+    .icon{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    &amp;.warning{@extend .bg-primary;}
+    &amp;.info{@extend .bg-info;}
+    &amp;.success{@extend .bg-success;}
+    &amp;.danger{
+        @extend .bg-danger;color: #fff;
+        a{color: #fff;}
+    }
+    &amp;.inactive{
+        @extend .bg-inactive;
+        a{color: #A3A3A3;}
+    }
+}
+</code>
+                    </pre>
+
+                    <pre class="language-javascript sm-text">
+<code>
+    // this JQuery code can be used for live modal box either notification box
+    // just make sure the div parent you want to dissmiss has ".js-modal" class
+    // add ".js-close-modal" to a link / button to make it work as a close button
+    // add ".js-show-modal" to a link / button to make it work as a trigger to show modal box
+
+    $('.js-close-modal').click(function(e){
+        e.preventDefault();
+        $(this).closest('.js-modal').fadeOut();
+    });
+
+    $('.js-show-modal').click(function(e){
+        e.preventDefault();
+        var elTarget = $(this).data('href');
+        $(elTarget).fadeIn();
+    });
+</code>
+                    </pre>
+
+                    <div class="row large">
+                        <p class="fw-medium">Live Modal Box</p>
+                        <a href="" data-href="#example" class="button js-show-modal">Click Here</a>
+
+                        <div id="example" class="modal-box js-modal">
+                            <div class="modal-content ctn-wrapper">
+                                <span class="icon sm-text"><a href="" class="js-close-modal flaticon-close"></a></span>
+                                <h6 class="fw-medium title">A super title.</h6>
+                                <p>Bee in your bonnet Hand of Glory elder wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. </p>
+                                <a href="" class="hide-modal button js-close-modal">OK</a>
+                                <a href="" class="hide-modal button dark js-close-modal">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre class="language-markup sm-text">
+<code>
+    &lt;div id="example" class="modal-box js-modal">
+    &lt;!-- the div ID must match to the trigger link / button href -->
+        &lt;div class="modal-content ctn-wrapper">
+            &lt;span class="icon sm-text">&lt;a href="" class="js-close-modal flaticon-close">&lt;/a>&lt;/span>
+            &lt;h6 class="fw-medium title">A super title.&lt;/h6>
+            &lt;p>Bee in your bonnet Hand of Glory elder wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. &lt;/p>
+            &lt;a href="" class="hide-modal button js-close-modal">OK&lt;/a>
+            &lt;a href="" class="hide-modal button dark js-close-modal">Cancel&lt;/a>
+        &lt;/div>
+    &lt;/div>
+</code>
+                    </pre>
+
+                </div>
+            </section>
+
+            <section id="anchor-smooth-scroll" class="column full bg-white">
+                <div class="container ctn-wrapper large">
+                    <h5 class="title fw-medium">Smooth Scroll</h5>
+                    <p>Smooth scrolling for anchor link on one page website. Here is the javascript code. <a href="https://css-tricks.com/snippets/jquery/smooth-scrolling/" target="_blank">Source</a></p>
+                    <pre class="language-javascript">
+<code>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') &amp;&amp; location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
+                    </code></pre>
+                </div>
+            </section>
+
+            <div class="go-up"><a href="#anchor-dropdown-menu" class="flaticon-up-arrow"></a></div>
+
+            <footer id="footer"></footer>
+        </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/prism.js"></script>
+        <script src="js/vendor/jquery.flexslider-min.js"></script>
+    </body>
+</html>
