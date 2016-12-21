@@ -7958,6 +7958,16 @@ button.close {
 }
 
 /* line 101, ../scss/bootstrap.scss */
+.portfolio-image {
+  width: 100%;
+  min-height: 400px;
+  margin-top: 20px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 110, ../scss/bootstrap.scss */
 .about-pp {
   width: 100%;
   /* height: 100px; */
@@ -7966,27 +7976,27 @@ button.close {
   border-radius: 50%;
   margin: 20px auto 0;
 }
-/* line 108, ../scss/bootstrap.scss */
+/* line 117, ../scss/bootstrap.scss */
 .about-pp img {
   width: 100%;
 }
 
-/* line 115, ../scss/bootstrap.scss */
+/* line 124, ../scss/bootstrap.scss */
 .footer ul li {
   margin-left: 5px;
   display: inline-block;
 }
-/* line 118, ../scss/bootstrap.scss */
+/* line 127, ../scss/bootstrap.scss */
 .footer ul li a {
   width: 30px;
   display: block;
   height: 30px;
 }
-/* line 122, ../scss/bootstrap.scss */
+/* line 131, ../scss/bootstrap.scss */
 .footer ul li a img {
   width: 100%;
 }
-/* line 124, ../scss/bootstrap.scss */
+/* line 133, ../scss/bootstrap.scss */
 .footer ul li a:hover img {
   opacity: 0.7;
 }
