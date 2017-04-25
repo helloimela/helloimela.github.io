@@ -22,8 +22,11 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 }]);
 
 app.controller('HomeCtrl', ['$http','$scope',function($http, $scope){
+  // $scope.$sce = $sce;
     $http.get('portfolioData.json').then(function(data){
+
         $scope.items = data.data;
+        // $scope.bindHTML = $sce.trustAsHtml($scope.items);
     }); 
 
 }]);
